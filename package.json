@@ -1,0 +1,19 @@
+{
+  "name": "openspec-workbench",
+  "version": "0.2.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --noEmit && node esbuild.mjs"
+  },
+  "dependencies": {
+    "diff": "^8.0.3",
+    "micromark": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.28.0",
+    "obsidian": "^1.12.0",
+    "typescript": "~5.9.3"
+  }
+}

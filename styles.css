@@ -1,0 +1,132 @@
+.openspec-workbench {
+  width: min(760px, calc(100vw - 32px));
+}
+
+.openspec-workbench .modal-content {
+  overscroll-behavior: contain;
+}
+
+.openspec-workbench .openspec-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.openspec-workbench .openspec-actions input[type="search"] {
+  flex: 1 1 240px;
+}
+
+.openspec-workbench button[aria-pressed="true"] {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+.openspec-workbench .openspec-status {
+  margin-block: 8px;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
+
+.openspec-workbench .openspec-results,
+.openspec-workbench .openspec-preview {
+  max-height: 50vh;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.openspec-workbench .openspec-proposal-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  min-height: 44px;
+  padding: 8px;
+  margin-block: 4px;
+  text-align: start;
+  white-space: normal;
+}
+
+.openspec-workbench .openspec-proposal-row small {
+  color: var(--text-muted);
+}
+
+.openspec-workbench .openspec-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  padding: 8px 0;
+  border: 0;
+}
+
+.openspec-workbench .openspec-types label,
+.openspec-workbench .openspec-confirmation {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.openspec-workbench .openspec-tasks {
+  margin: 0 0 12px;
+  padding: 0;
+  border: 0;
+}
+
+.openspec-workbench .openspec-tasks p {
+  margin: 4px 0;
+  color: var(--text-muted);
+}
+
+.openspec-workbench .openspec-task-list {
+  max-height: 160px;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.openspec-workbench .openspec-task-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding-block: 4px;
+}
+
+.openspec-workbench .openspec-task-option input {
+  flex: 0 0 auto;
+}
+
+.openspec-workbench .openspec-field {
+  display: grid;
+  gap: 4px;
+  margin-block-end: 12px;
+}
+
+.modal.openspec-workbench .modal-content .openspec-field > textarea {
+  box-sizing: border-box;
+  width: 100%;
+  /* Blue Topaz 给弹窗文本框设了带 !important 的固定高度。 */
+  height: auto !important;
+  min-height: 4rem;
+  max-height: min(12rem, 35vh);
+  field-sizing: content;
+  overflow-y: auto;
+  resize: none;
+}
+
+.openspec-workbench pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.openspec-workbench details {
+  margin-block: 8px;
+}
+
+.openspec-workbench summary {
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.openspec-workbench .openspec-footer {
+  justify-content: flex-end;
+}
