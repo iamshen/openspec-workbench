@@ -48,7 +48,9 @@ interface Reference {
 }
 
 function references(content: string): Reference[] {
-  const tokens = postprocess(parse().document().write(preprocess()(content, undefined, true)));
+  const tokenizer = parse().document();
+  const chunks = preprocess()(content, undefined, true);
+  const tokens = postprocess(tokenizer.write(chunks));
   const result: Reference[] = [];
   const excluded: [number, number][] = [];
   for (const [event, token] of tokens) {

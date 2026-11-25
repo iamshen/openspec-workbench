@@ -1,7 +1,7 @@
 {
   "id": "openspec-workbench",
   "name": "OpenSpec Workbench",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "minAppVersion": "1.12.7",
   "description": "Browse, validate, and archive OpenSpec changes with previews for tasks, specs, and links.",
   "author": "Xrzc",
